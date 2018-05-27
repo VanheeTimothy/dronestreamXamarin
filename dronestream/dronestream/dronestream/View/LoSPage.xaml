@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dronestream.View.LoSPage" NavigationPage.HasNavigationBar="False">
+    <StackLayout Padding="3" BackgroundColor="#29364A">
+        <Picker IsVisible="True" BackgroundColor="#29364A" x:Name="pickCountry" Title="Choose a country" TextColor="#D5AFA5" Grid.Row="0" SelectedIndexChanged="pickCountry_SelectedIndexChanged"/>
+
+        <StackLayout x:Name="activityHolder">
+
+            <ActivityIndicator x:Name="loading" Color="#FFFFFF"/>
+        </StackLayout>
+
+
+        <ListView x:Name="lvwStrikes" ItemSelected="lvwStrikes_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Town}" TextColor="#FFFFFF" HorizontalOptions="FillAndExpand"/>
+                                    <Label Text="{Binding Deaths_max}" TextColor="#FFFFFF"/>
+                                </StackLayout>
+                                <Label Text="{Binding Country}" TextColor="#D5AFA5" FontSize="Micro" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

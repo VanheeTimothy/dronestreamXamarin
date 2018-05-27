@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dronestream.View.NoNetworkPage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D5AFA5">
+            <Label x:Name="ConnectionDetails" XAlign="Center" HorizontalTextAlignment="Center"/>
+            <Image x:Name="Photo" Aspect="AspectFill" MinimumHeightRequest="100" MinimumWidthRequest="100"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

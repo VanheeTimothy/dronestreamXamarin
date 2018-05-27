@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dronestream.View.DetailPage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Spacing="0" >
+            <StackLayout Spacing="0">
+                <Grid RowSpacing="0" Padding="0" Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                      
+                    </Grid.ColumnDefinitions>
+                <Image x:Name="CountryFlag"  Grid.Row="0" Grid.Column="0"/>
+                    <!--<BoxView BackgroundColor="#29364A" Opacity="0.7" Grid.Row="0" Grid.Column="0"/>-->
+
+                </Grid>
+
+            </StackLayout>
+            
+
+
+
+            <ScrollView IsClippedToBounds="True" >
+
+                <Grid Padding="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+
+
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="lblDate" Grid.Column="1" Grid.Row="0" HorizontalOptions="End" TextColor="#4E596A"/>
+                    <Label x:Name="lblTown" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" FontSize="Large" TextColor="#4E596A"/>
+                    <Label x:Name="lblLocation" Grid.Column="0" Grid.Row="2" TextColor="#4E596A"/>
+
+                    <StackLayout Grid.Column="1" Grid.Row="2" Orientation="Horizontal"  HorizontalOptions="Start">
+                        <Label x:Name="xLat" Text="Lat: "/>
+                        <Label x:Name="lblLat" Text="lat: " TextColor="#4E596A"/>
+                    </StackLayout>
+
+
+                    <Label x:Name="lblCountry" Grid.Column="0" Grid.Row="3" TextColor="#4E596A"/>
+
+                    <StackLayout Grid.Column="1" Grid.Row="3" Orientation="Horizontal"  HorizontalOptions="Start">
+                        <Label x:Name="xLon" Text="lon: " />
+                        <Label x:Name="lblLon" TextColor="#4E596A"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0" Grid.Row="4" Orientation="Horizontal" >
+                        <Label x:Name="xDeaths" Text="Deaths: " />
+                        <Label x:Name="lblDeaths" TextColor="#4E596A"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1" Grid.Row="4" Orientation="Horizontal"  HorizontalOptions="Start">
+                        <Label x:Name="xInjuries" Text="Injuries: " />
+                        <Label x:Name="lblInjuries" TextColor="#4E596A"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0" Grid.Row="5" Orientation="Horizontal">
+                        <Label x:Name="xChildren" Text="Children: " />
+                        <Label x:Name="lblChildren" TextColor="#4E596A"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1" Grid.Row="5" Orientation="Horizontal"  HorizontalOptions="Start">
+                        <Label x:Name="xCivilians" Text="Civilians: " />
+                        <Label x:Name="lblCivilians" TextColor="#4E596A"/>
+                    </StackLayout>
+
+                    <Label x:Name="xTarget" Text="Targets: " Grid.Row="6" Grid.Column="0" />
+                    <Label x:Name="lblTarget" Grid.Row="7" Grid.Column="0" TextColor="#4E596A"/>
+
+
+
+
+                    <Label x:Name="xNarrative" Text="Narrative: " Grid.Column="0" Grid.Row="8"  />
+                    <Label x:Name="lblNarrative" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" TextColor="#4E596A"/>
+                    <Label x:Name="xNames" Text="Names: " Grid.Column="0" Grid.Row="10" />
+                    <Label x:Name="lblNames" Grid.Column="0" Grid.Row="11" TextColor="#4E596A"/>
+
+
+
+
+
+
+
+                </Grid>
+                
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

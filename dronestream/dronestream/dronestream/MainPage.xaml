@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:dronestream"
+             x:Class="dronestream.MainPage" NavigationPage.HasNavigationBar="False">
+
+    <StackLayout BackgroundColor="#29364A" Spacing="5">
+
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image x:Name="imgBackground" Grid.Row="0" Grid.Column="0" />
+            <Label x:Name="lblTitle" Text="Dronestream" HorizontalOptions="Center"  TextColor="White" FontSize="50" Grid.Row="0" Grid.Column="0" VerticalOptions="End"/>
+            <!--<BoxView BackgroundColor="#29364A" Grid.Row="0" Grid.Column="0" Opacity="0.6"/>-->
+
+        </Grid>
+
+        <StackLayout VerticalOptions="CenterAndExpand" Spacing="5" Padding="5">
+
+            <Frame  BackgroundColor="#4E596A">
+                <Label x:Name="lblList" Text="List of Strikes" TextColor="White"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand"  />
+
+            </Frame>
+            <Frame BackgroundColor="#4E596A">
+                <Label x:Name="lblGlobalinfo" Text="Global Info" TextColor="White"   HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
+            </Frame>
+            <Frame>
+                <Label x:Name="lblUrl" Text="Visit official site" TextColor="#4E596A" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            </Frame>
+
+
+
+        </StackLayout>
+        <StackLayout Padding="5">
+            <Label x:Name="lblInfo" Text="DroneStream is an API which provides data about all dronestrikes of The United States Of America in Pakistan, Somalia and Yemen." HorizontalTextAlignment="Center" TextColor="#4E596A"   HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+
+        </StackLayout>
+
+
+
+    </StackLayout>
+
+
+
+
+
+</ContentPage>
